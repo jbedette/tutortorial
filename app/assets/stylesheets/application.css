@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+ .backimg{
+ 	background-image: url(/assets/Tutoring 02.jpg);
+ 	background-size: 100%;
+ }
