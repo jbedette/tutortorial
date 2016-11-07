@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
 root to: "home#index"
 
+resource :home
 resource :profiles
 resource :users
 
