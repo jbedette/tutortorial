@@ -1,0 +1,23 @@
+<br>
+<div class="page_header">
+  Register
+</div>
+<br>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="align_job">
+    <%= f.label :email, :class => "labelStyle" %>
+    <%= f.email_field :email, :class => "fieldStyle", autofocus: true %><br>
+    <%= f.label :password, :class => "labelStyle" %>
+    <span class="labelStyle">
+      <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %>
+    </span>
+    <%= f.password_field :password, :class => "fieldStyle", autocomplete: "off" %><br>
+    <%= f.label :password_confirmation, :class => "labelStyle" %>
+    <%= f.password_field :password_confirmation, :class => "fieldStyle", autocomplete: "off" %><br>
+    <%= f.submit "Submit", :class => "buttonJobSave" %>
+  </div>
+<% end %>
