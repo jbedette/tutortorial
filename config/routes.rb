@@ -8,4 +8,6 @@ resource :home
 resource :profiles
 resource :users
 
+resource :portals
+
 end
