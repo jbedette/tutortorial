@@ -10,13 +10,48 @@
 
   <body class="backimg">
 
-    <div class="navbar">
-      <ul>
-        <li>
-
-        </li>
-      </ul>
-    </div>
+    <div id="navbar">
+      <div id="navbar2">
+  			<ul>
+  				<li id="home"><a href="/">Home</a></li>
+  				<li id="tutors"><a href="#" class="dropbtn">Tutors</a>
+  					<div class="drop_down_4all" id="drop_down_tutors">
+  						<div class="drop_down_tutors_sub">
+  							<a href="/users">Register New</a>
+  						</div>
+  						<div class="drop_down_tutors_sub">
+  							<a href="/users/:id/edit">Edit Existing</a>
+  						</div>
+  						<div class="drop_down_tutors_sub">
+  							<a href="/">View All</a>
+  						</div>
+  					</div>
+  				</li>
+  				<li id="students"><a href="#" class="dropbtn">Students</a>
+  					<div class="drop_down_4all" id="drop_down_students">
+  						<div class="drop_down_students_sub">
+  							<a href="/students/sign_in">Register New</a>
+  						</div>
+  						<div class="drop_down_students_sub">
+  							<a href="/spaceships/edit">Edit Your Profile</a>
+  						</div>
+  					</div>
+  				</li>
+  				<li id="jobs"><a href="#" class="dropbtn">Contracts</a>
+  					<div class="drop_down_4all" id="drop_down_contracts">
+  						<div class="drop_down_contracts_sub">
+  							<a href="/contracts/sign_in">Create New</a>
+  						</div>
+  						<div class="drop_down_contracts_sub">
+  							<a href="/contracts/edit">Edit Existing</a>
+  						</div>
+  					</div>
+  				</li>
+  				<li id="signout"><a href="/users/sign_out">Sign Out</a></li>
+  			</ul>
+  		</div>
+		</div>
+    <br><br><br>
 
     <%= yield %>
 
