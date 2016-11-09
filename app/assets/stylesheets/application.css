@@ -105,12 +105,11 @@
 }
 #navbar {
   display: block;
-  /*Change the color above*/
-  background-image: url(Wood Tone - Cherryish.jpg) repeat-x;
   text-align: center;
   padding:0px;/*changing its value will give menu margins to its container*/
 }
 #navbar2 {
+  background-image: url("Wood Tone - Cherryish.jpg") repeat-x;
   margin:0 auto;/*If you don't want the menu center aligned, remove this line and above text-align:center*/
   padding-left: 410px;
 }
