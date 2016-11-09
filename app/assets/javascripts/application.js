@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require google-instant-hangouts
 //= require_tree .
 $(document).ready(function(){
 	// $("#drop_down_tutors").hide();
