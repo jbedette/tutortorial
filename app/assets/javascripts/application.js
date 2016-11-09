@@ -17,7 +17,29 @@
 //= require bootstrap-wysihtml5
 
 //= require_tree .
+<<<<<<< HEAD
+
+
+=======
+$(document).ready(function(){
+	// $("#drop_down_tutors").hide();
+	// $("#drop_down_students").hide();
+	// $("#drop_down_contracts").hide();
+
+	$("#tutors").hover(function(){
+		$("#drop_down_tutors").slideDown("slow");}, function(){
+		$("#drop_down_tutors").slideUp("slow");
+		});
+	$("#students").hover(function(){
+		$("#drop_down_students").slideDown("slow");}, function(){
+		$("#drop_down_students").slideUp("slow");
+		});
+	$("#jobs").hover(function(){
+		$("#drop_down_contracts").slideDown("slow");}, function(){
+		$("#drop_down_contracts").slideUp("slow");
+	})
+>>>>>>> 10160027a6e585a305cfc7291edd282dc256fc12
+});
 
 $(document).on('page:load', function(){
   window['rangy'].initialized = false
-});
