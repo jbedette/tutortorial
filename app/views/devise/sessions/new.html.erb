@@ -1,26 +1,25 @@
-<h2>Log in</h2>
+<br>
+<div class="page_header">
+  Login
+</div>
+<br>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+<div class="align_job">
+    <%= f.label :email, :class => "labelStyle" %>
+    <%= f.email_field :email, :class => "fieldStyle", autofocus: true %><br>
+    <%= f.label :password, :class => "labelStyle" %>
+    <%= f.password_field :password, :class => "fieldStyle", autocomplete: "off" %><br>
 
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-  <% end -%>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
+    <% if devise_mapping.rememberable? -%>
+        <%= f.check_box :remember_me, :class => "fieldStyle" %>
+        <%= f.label :remember_me, :class => "labelStyle" %>
+    <% end -%>
+    <br>
+    <%= f.submit "Login", :class => "buttonJobSave" %>
+</div>
 <% end %>
+<br>
 
 <%= render "devise/shared/links" %>
