@@ -18,7 +18,7 @@
  // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
  @import "bootstrap-sprockets";
  @import "bootstrap";
- 
+
 
 
 .backimg{
@@ -111,11 +111,7 @@
 }
 #navbar {
   display: block;
-<<<<<<< HEAD:app/assets/stylesheets/application.css
-=======
-  /*Change the color above*/
   // background-image: url(Wood Tone - Cherryish.jpg) repeat-x;
->>>>>>> db8a6a9ec21b5f3a1bfb2cc7fb5297efacef60cf:app/assets/stylesheets/application.scss
   text-align: center;
   padding:0px;/*changing its value will give menu margins to its container*/
 }
