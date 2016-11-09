@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require google-instant-hangouts
+
+//= require bootstrap-sprockets
 //= require bootstrap-wysihtml5
 
 //= require_tree .
