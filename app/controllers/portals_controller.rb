@@ -1,4 +1,4 @@
-class PortalController < ApplicationController
+class PortalsController < ApplicationController
   def show
   end
 end
