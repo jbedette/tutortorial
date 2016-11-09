@@ -12,8 +12,14 @@
  *
  *= require_tree .
  *= require_self
- *= require bootstrap-wysihtml5
+ @import bootstrap-wysihtml5
  */
+
+ // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ 
+
 
 .backimg{
    	background-image: url("Tutoring 02.jpg");
@@ -30,7 +36,7 @@
     margin: 0 auto;
     padding: 5px 0 10px 0;
     width: 320px;
-    rgba(75, 213, 40, .8);
+    text-color:rgba(75, 213, 40, .8);
     color: #4BD528;
     font-weight: bold;
     -webkit-text-stroke-width:1px;
@@ -90,7 +96,7 @@
   color: black;
   font-size: 38px;
   margin-top: 25px;
-  margin-right: : 30px;
+  margin-right:  30px;
   border-radius: 45px;
   border: 4px solid rgba(50,50,100,.8);
 }
@@ -105,6 +111,11 @@
 }
 #navbar {
   display: block;
+<<<<<<< HEAD:app/assets/stylesheets/application.css
+=======
+  /*Change the color above*/
+  // background-image: url(Wood Tone - Cherryish.jpg) repeat-x;
+>>>>>>> db8a6a9ec21b5f3a1bfb2cc7fb5297efacef60cf:app/assets/stylesheets/application.scss
   text-align: center;
   padding:0px;/*changing its value will give menu margins to its container*/
 }

@@ -14,13 +14,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require google-instant-hangouts
+
+//= require bootstrap-sprockets
 //= require bootstrap-wysihtml5
 
 //= require_tree .
-<<<<<<< HEAD
-
-
-=======
 $(document).ready(function(){
 	// $("#drop_down_tutors").hide();
 	// $("#drop_down_students").hide();
@@ -38,7 +36,6 @@ $(document).ready(function(){
 		$("#drop_down_contracts").slideDown("slow");}, function(){
 		$("#drop_down_contracts").slideUp("slow");
 	})
->>>>>>> 10160027a6e585a305cfc7291edd282dc256fc12
 });
 
 $(document).on('page:load', function(){
