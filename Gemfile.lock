@@ -41,6 +41,8 @@ GEM
     arel (7.1.4)
     awesome_print (1.7.0)
     bcrypt (3.1.11)
+    bootstrap-wysihtml5-rails (0.3.3.8)
+      railties (>= 3.0)
     builder (3.2.2)
     byebug (9.0.6)
     climate_control (0.0.3)
@@ -189,6 +191,7 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print
+  bootstrap-wysihtml5-rails
   byebug
   coffee-rails (~> 4.2)
   devise

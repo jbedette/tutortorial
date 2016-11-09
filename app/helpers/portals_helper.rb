@@ -1,2 +1,2 @@
-module PortalHelper
+module PortalsHelper
 end

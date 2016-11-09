@@ -5,6 +5,7 @@ gem 'paperclip','~> 5.0.0'
 gem 'pry-rails'
 gem 'awesome_print'
 gem 'google-instant-hangouts'
+gem 'bootstrap-wysihtml5-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'

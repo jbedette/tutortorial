@@ -14,4 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require google-instant-hangouts
+//= require bootstrap-wysihtml5
+
 //= require_tree .
+
+$(document).on('page:load', function(){
+  window['rangy'].initialized = false
+});
