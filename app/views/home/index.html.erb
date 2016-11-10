@@ -2,7 +2,7 @@
   <%= @message %>
 </div>
 
-<nav>
+<nav class="col-md-6">
   <% if (user_signed_in?) %>
     <%= link_to 'Sign Out',  { :action=>"destroy", :controller=>"devise/sessions" }, method: :delete  %>
   <% else %>
@@ -25,3 +25,6 @@
   <% end %>
   </div>
 </nav>
+<div class="col-md-6">
+
+</div>

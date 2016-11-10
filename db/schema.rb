@@ -12,6 +12,11 @@
 
 ActiveRecord::Schema.define(version: 20161110165225) do
 
+  create_table "admins", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "contracts", force: :cascade do |t|
     t.integer  "tutor_id"
     t.integer  "post_id"
@@ -21,7 +26,7 @@ ActiveRecord::Schema.define(version: 20161110165225) do
   end
 
   create_table "posts", force: :cascade do |t|
-    t.integer  "user_id"
+    t.string   "name"
     t.string   "title"
     t.string   "subject"
     t.text     "content"
@@ -29,11 +34,15 @@ ActiveRecord::Schema.define(version: 20161110165225) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "tutors", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "fname",                  limit: 20
     t.string   "lname",                  limit: 20
-    t.string   "location",               limit: 20
-    t.string   "phnumber",               limit: 15
+    t.string   "username",               limit: 20
     t.string   "usertype",               limit: 7
     t.string   "email",                             default: "", null: false
     t.string   "encrypted_password",                default: "", null: false
