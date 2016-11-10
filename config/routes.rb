@@ -7,7 +7,5 @@ root to: "home#index"
 resource :home
 resource :profiles
 resource :users
-
-resource :portals
-
+resource :contracts
 end

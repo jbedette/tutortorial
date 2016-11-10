@@ -19,8 +19,6 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
-
-
 .backimg{
    	background-image: url("Tutoring 02.jpg");
    	background-size: 100%;
@@ -35,7 +33,7 @@
     box-shadow: 5px 5px 5px #888888;
     margin: 0 auto;
     padding: 5px 0 10px 0;
-    width: 320px;
+    width: 420px;
     text-color:rgba(75, 213, 40, .8);
     color: #4BD528;
     font-weight: bold;
@@ -58,6 +56,10 @@
  }
 .fieldStyle{
   font-size: 28px;
+}
+.droplist{
+  height: 35px;
+  font-size: 18px;
 }
 #button1{
   position: absolute;
@@ -109,6 +111,9 @@
   border-radius: 45px;
   border: 4px solid rgba(50,50,100,.8);
 }
+
+// navbar
+
 #navbar {
   display: block;
   // background-image: url(Wood Tone - Cherryish.jpg) repeat-x;
@@ -116,7 +121,7 @@
   padding:0px;/*changing its value will give menu margins to its container*/
 }
 #navbar2 {
-  background-image: url("Wood Tone - Cherryish.jpg") repeat-x;
+  // background-image: url("Wood Tone - Cherryish.jpg") repeat-x;
   margin:0 auto;/*If you don't want the menu center aligned, remove this line and above text-align:center*/
   padding-left: 410px;
 }

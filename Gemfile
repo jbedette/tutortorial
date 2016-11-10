@@ -6,7 +6,6 @@ gem 'pry-rails'
 gem 'awesome_print'
 gem 'google-instant-hangouts'
 gem 'bootstrap-wysihtml5-rails'
-gem 'webrtc-rails', '~> 0.1.0'
 gem 'bootstrap-sass', '~> 3.3.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
