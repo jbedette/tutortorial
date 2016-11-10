@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161110165225) do
+ActiveRecord::Schema.define(version: 20161110213415) do
 
   create_table "contracts", force: :cascade do |t|
     t.integer  "tutor_id"
@@ -30,11 +30,6 @@ ActiveRecord::Schema.define(version: 20161110165225) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "fname",                  limit: 20
-    t.string   "lname",                  limit: 20
-    t.string   "location",               limit: 20
-    t.string   "phnumber",               limit: 15
-    t.string   "usertype",               limit: 7
     t.string   "email",                             default: "", null: false
     t.string   "encrypted_password",                default: "", null: false
     t.string   "reset_password_token"
@@ -48,6 +43,11 @@ ActiveRecord::Schema.define(version: 20161110165225) do
     t.datetime "created_at",                                     null: false
     t.datetime "updated_at",                                     null: false
     t.string   "type"
+    t.string   "fname",                  limit: 20
+    t.string   "lname",                  limit: 20
+    t.string   "location",               limit: 20
+    t.string   "phnumber",               limit: 15
+    t.string   "usertype",               limit: 7
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

@@ -47,15 +47,29 @@
    font-size: 52px;
    margin-top: 23px;
 }
+.align_job2{
+   text-align: right;
+   margin-right: 28%;
+   font-size: 52px;
+   margin-top: 23px;
+}
 .labelStyle{
   color: white;
   font-family: 'Wallpoet', cursive;
-  font-size: 36px;
-  /*-webkit-text-stroke-width:1.5px;
-  -webkit-text-stroke-color:black;*/
- }
-.fieldStyle{
   font-size: 28px;
+ }
+ .labelStyle2{
+   float: left;
+   color: white;
+   font-family: 'Wallpoet', cursive;
+   font-size: 28px;
+  }
+.fieldStyle{
+  font-size: 22px;
+}
+.droplist{
+  width: 60%;
+  // display: inline-block;
 }
 .droplist select{
   height: 35px;
@@ -65,7 +79,7 @@
 }
 #button1{
   position: absolute;
-  top: 230px;
+  top: 320px;
   left: 470px;
   cursor: pointer;
   color: black;
@@ -76,7 +90,7 @@
 }
 #button2{
   position: absolute;
-  top: 230px;
+  top: 320px;
   left: 870px;
   cursor: pointer;
   color: black;
@@ -113,6 +127,17 @@
   border-radius: 45px;
   border: 4px solid rgba(50,50,100,.8);
 }
+.buttonJobSave4{
+  color: black;
+  font-size: 38px;
+  margin-top: 25px;
+  margin: 30px auto;
+  text-align: right;
+  cursor: pointer;
+  border-radius: 45px;
+  border: 4px solid rgba(50,50,100,.8);
+  margin-right: 23%;
+}
 
 // navbar
 
@@ -130,6 +155,9 @@
 a {
 	color: yellow;
 	text-decoration: none;
+}
+a:visited {
+    color: yellow;
 }
 #navbar li {
 	float:left;
