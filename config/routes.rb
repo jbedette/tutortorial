@@ -9,4 +9,5 @@ resource :home
 resource :profiles
 resource :users
 resource :contracts
+
 end
