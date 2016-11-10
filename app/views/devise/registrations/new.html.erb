@@ -12,8 +12,8 @@
     <%= f.label :lname, "Last Name", :class => "labelStyle" %>
     <%= f.text_field :lname, :class => "fieldStyle" %><br>
 
-    <%= f.label :user, "Register as:", :class => "labelStyle" %>
-    <%= select :user, :usertype, [['Tutor','tutor'], ['Student','student']], :class => "droplist" %><br>
+    <%= f.label :usertype, "Register as:", :class => "labelStyle" %>
+    <%= f.select :usertype, nil, ['Tutor', 'Student'], :class => "droplist" %><br>
 
     <%= f.label :email, :class => "labelStyle" %>
     <%= f.email_field :email, :class => "fieldStyle" %><br>

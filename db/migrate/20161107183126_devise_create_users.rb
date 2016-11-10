@@ -4,7 +4,8 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
       ## Database authenticatable
       t.string :fname, limit: 20
       t.string :lname, limit: 20
-      t.string :username, limit: 20
+      t.string :location, limit: 20
+      t.string :phnumber, limit: 15
       t.string :usertype, limit: 7
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
