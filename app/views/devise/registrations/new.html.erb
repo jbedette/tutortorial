@@ -34,7 +34,7 @@
     <%= f.password_field :password, :class => "fieldStyle", autocomplete: "off" %><br>
 
     <%= f.label :password_confirmation, "Password Confirmation:", :class => "labelStyle" %>
-    <%= f.password_field :password_confirmation, password_options.merge(:class => "fieldStyle", autocomplete: "off") %><br>
+    <%= f.password_field :password_confirmation, :class => "fieldStyle", autocomplete: "off" %><br>
     <%= f.submit "Submit", :class => "buttonJobSave4" %>
   </div>
 <% end %>

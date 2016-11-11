@@ -38,6 +38,6 @@ $(document).ready(function(){
 	})
 });
 
-$(document).on('page:load', function(){
-  window['rangy'].initialized = false
-});
+// $(document).on('page:load', function(){
+//   window['rangy'].initialized = false
+// });

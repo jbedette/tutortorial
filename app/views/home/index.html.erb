@@ -4,7 +4,14 @@
 
 <nav>
   <% if (user_signed_in?) %>
-    <%= link_to 'Sign Out',  { :action=>"destroy", :controller=>"devise/sessions" }, method: :delete  %>
+  <!-- Add something here for the user to see after they login -->
+
+  <br>
+  <span id="noticestyle">
+    <%= @User.fname %> <%= @User.lname %>
+  </span>
+
+
   <% else %>
 
   <div id="logging">
@@ -19,9 +26,6 @@
       <input type="submit"  id="button2" value="Login" />
     </form>
     <!-- <%= link_to 'Login', new_user_session_path %> -->
-
-
-
   <% end %>
   </div>
 </nav>
