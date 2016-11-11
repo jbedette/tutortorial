@@ -7,15 +7,15 @@
 
   <div class="align_job2">
     <%= f.label :fname, "First Name:", :class => "labelStyle" %>
-    <%= f.text_field :fname, :class => "fieldStyle", autofocus: true %>
+    <%= f.text_field :fname, :class => "fieldStyle", autocomplete: "off", autofocus: true %>
     <%= f.label :lname, "Last Name:", :class => "labelStyle" %>
-    <%= f.text_field :lname, :class => "fieldStyle" %><br>
+    <%= f.text_field :lname, :class => "fieldStyle", autocomplete: "off" %><br>
 
     <%= f.label :location, "Location:", :class => "labelStyle" %>
-    <%= f.text_field :location, :class => "fieldStyle" %>
+    <%= f.text_field :location, :class => "fieldStyle", autocomplete: "off" %>
 
     <%= f.label :phnumber, "Phone #:", :class => "labelStyle" %>
-    <%= f.text_field :phnumber, :class => "fieldStyle" %><br>
+    <%= f.text_field :phnumber, :class => "fieldStyle", autocomplete: "off" %><br>
 
     <span class="droplist">
       <%= f.label :usertype, "Register as:", :class => "labelStyle" %>
@@ -23,7 +23,7 @@
     </span>
 
     <%= f.label :email, :class => "labelStyle" %>
-    <%= f.email_field :email, :class => "fieldStyle" %><br>
+    <%= f.email_field :email, :class => "fieldStyle", autocomplete: "off" %><br>
 
     <%= f.label :password, :class => "labelStyle" %>
     <span class="labelStyle">

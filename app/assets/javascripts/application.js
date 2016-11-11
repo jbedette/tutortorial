@@ -32,12 +32,8 @@ $(document).ready(function(){
 		$("#drop_down_students").slideDown("slow");}, function(){
 		$("#drop_down_students").slideUp("slow");
 		});
-	$("#jobs").hover(function(){
+	$("#contracts").hover(function(){
 		$("#drop_down_contracts").slideDown("slow");}, function(){
 		$("#drop_down_contracts").slideUp("slow");
 	})
 });
-
-// $(document).on('page:load', function(){
-//   window['rangy'].initialized = false
-// });
