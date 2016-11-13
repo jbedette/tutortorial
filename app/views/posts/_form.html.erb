@@ -11,10 +11,11 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
+  <span id="noticestyle">
+    <%= @ User.fname %> <%= @User.lname %>
+  </span>
+
+
 
   <div class="field">
     <%= f.label :title %>
