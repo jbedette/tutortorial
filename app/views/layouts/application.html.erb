@@ -13,40 +13,62 @@
       <div id="navbar2">
   			<ul>
   				<li id="home"><a href="/">Home</a></li>
-  				<li id="tutors"><a href="#" class="dropbtn">Tutors</a>
-  					<div class="drop_down_4all" id="drop_down_tutors">
-  						<div class="drop_down_tutors_sub">
-  							<a href="/users/sign_up">Register New</a>
-  						</div>
-  						<div class="drop_down_tutors_sub">
-  							<a href="/users/:id/edit">Edit Existing</a>
-  						</div>
-  						<div class="drop_down_tutors_sub">
-  							<a href="/">View All</a>
-  						</div>
-  					</div>
-  				</li>
-  				<li id="students"><a href="#" class="dropbtn">Students</a>
-  					<div class="drop_down_4all" id="drop_down_students">
-  						<div class="drop_down_students_sub">
-  							<a href="/users/sign_up">Register New</a>
-  						</div>
-  						<div class="drop_down_students_sub">
-  							<a href="/students/edit">Edit Your Profile</a>
-  						</div>
-  					</div>
-  				</li>
+          <% if !current_user || current_user.usertype == "Tutor" %>
+    				<li id="tutors"><a href="#" class="dropbtn">Tutors</a>
+    					<div class="drop_down_4all" id="drop_down_tutors">
+              <% if not current_user %>
+    						<div class="drop_down_tutors_sub">
+      							<a href="/users/sign_up?t=Tutor">Register New</a>
+    						</div>
+              <% end %>
+              <% if not current_user %>
+              <% else %>
+    						<div class="drop_down_tutors_sub">
+    							<a href="/users/:id/edit">Edit Existing</a>
+    						</div>
+                <% end %>
+                <% if not current_user %>
+                <% else %>
+      						<div class="drop_down_tutors_sub">
+      							<a href="/">View All</a>
+      						</div>
+              <% end %>
+    					</div>
+            <% end %>
+          <% if !current_user || current_user.usertype == "Student" %>
+    				</li>
+      				<li id="students"><a href="#" class="dropbtn">Students</a>
+      					<div class="drop_down_4all" id="drop_down_students">
+                  <% if not current_user %>
+        						<div class="drop_down_students_sub">
+        							<a href="/users/sign_up?t=Student">Register New</a>
+        						</div>
+                  <% end %>
+                  <% if not current_user %>
+                  <% else %>
+        						<div class="drop_down_students_sub">
+        							<a href="/students/edit">Edit Your Profile</a>
+        						</div>
+                  <% end %>
+      					</div>
+      				</li>
+          <% end %>
           <li id="posts"><a href="#" class="dropbtn">Posts</a>
   					<div class="drop_down_4all" id="drop_down_posts">
   						<div class="drop_down_posts_sub">
-  							<a href="/posts/index">View All</a>
+  							<a href="/posts">View All</a>
+  						</div>
+              <div class="drop_down_posts_sub">
+  							<a href="<%= edit_post_path(@post) if @post %>">Edit Existing</a>
   						</div>
   						<div class="drop_down_posts_sub">
-  							<a href="/posts/new">Create New</a>
+  							<a href="<%= new_post_path %>">Create New</a>
   						</div>
   					</div>
   				</li>
-          <li id="signout"><%= link_to 'Sign Out',  { :action=>"destroy", :controller=>"devise/sessions" }, method: :delete  %></li>
+          <% if current_user %>
+            <li id="signout"><%= link_to 'Sign Out',  { :action=>"destroy", :controller=>"devise/sessions" }, method: :delete  %></li>
+          <% end %>
   			</ul>
   		</div>
 		</div>

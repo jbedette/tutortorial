@@ -1,21 +1,21 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :set_post, only: [:edit, :update, :destroy]
 
   # GET /posts
   # GET /posts.json
   def index
     @posts = Post.all
-    @homelist = User.all
   end
 
   # GET /posts/1
   # GET /posts/1.json
+
   def show
   end
 
   # GET /posts/new
   def new
-    @post = Post.new
+    # @post = Post.new
   end
 
   # GET /posts/1/edit
@@ -70,6 +70,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:name, :title, :subject, :content)
+      params.require(:post).permit(:name, :title, :subject, :content).merge({user_id: current_user.id})
     end
 end

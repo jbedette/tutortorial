@@ -19,7 +19,7 @@
 
     <span class="droplist">
       <%= f.label :usertype, "Register as:", :class => "labelStyle" %>
-      <%= f.select :usertype, ['Tutor', 'Student'] %>
+      <%= f.select :usertype, ['Tutor', 'Student'], selected: params[:t] %>
     </span>
 
     <%= f.label :email, :class => "labelStyle" %>

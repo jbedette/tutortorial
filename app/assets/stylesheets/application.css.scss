@@ -166,9 +166,9 @@
   padding:0px;/*changing its value will give menu margins to its container*/
 }
 #navbar2 {
-  // background-image: url("Wood Tone - Cherryish.jpg") repeat-x;
-  margin:0 auto;/*If you don't want the menu center aligned, remove this line and above text-align:center*/
-  padding-left: 313px;
+  display: inline-block;
+  text-align: center;
+  // padding-left: 313px;
 }
 a {
 	color: yellow;
@@ -211,7 +211,7 @@ a:hover{
 }
 #posts{
 	background: #873110;
-  width: 143px;
+  width: 153px;
 }
 #signout{
 	background: #873110;
@@ -221,12 +221,13 @@ a:hover{
 	text-align: center;
 	position: absolute;
 	cursor: pointer;
-	top: 63px;
+	top: 52px;
 }
 .drop_down_tutors_sub {
   height: 55px;
   padding: 0 12px;
 	padding-top: 15px;
+  width: 159px;
 	font: normal 12px Arial;
 	border: solid 1px #39F;
 	background: #873110;
@@ -234,6 +235,7 @@ a:hover{
 .drop_down_students_sub {
   height: 55px;
 	font: normal 12px Arial;
+  width: 184px;
 	padding: 0 12px;
   padding-top: 15px;
 	border: solid 1px #39F;
@@ -242,6 +244,7 @@ a:hover{
 .drop_down_posts_sub {
   height: 55px;
 	font: normal 12px Arial;
+  width: 153px;
 	padding: 0 12px;
   padding-top: 15px;
 	border: solid 1px #39F;
@@ -249,4 +252,23 @@ a:hover{
 }
 .dropbtn{
 	padding: 0px 30px;
+}
+
+table{
+  margin-left: 330px;
+  text-align: center;
+  border: 2px solid white;
+  color: white;
+  font-size: 22px;
+}
+th{
+  text-align: center;
+  padding: 0 10px;
+  border: 1px solid white;
+  color: white;
+}
+td{
+  padding: 0 10px;
+  border: 1px solid white;
+  color: white;
 }
