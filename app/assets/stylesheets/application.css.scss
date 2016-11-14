@@ -41,31 +41,49 @@
     -webkit-text-stroke-color:black;
     font-size: 32px;
 }
-.align_job{
+.align_job {
    text-align: right;
    margin-right: 38%;
    font-size: 52px;
    margin-top: 23px;
 }
-.align_job2{
+.align_job2 {
    text-align: right;
    margin-right: 28%;
    font-size: 52px;
    margin-top: 23px;
 }
-.labelStyle{
+.align_job3 {
+   text-align: right;
+   margin-right: 38%;
+   font-size: 52px;
+}
+.align_job4 {
+   text-align: right;
+   color: white;
+   margin-right: 38%;
+   font-size: 52px;
+}
+.align_job5 {
+   text-align: center;
+   color: white;
+  //  margin-right: 38%;
+   font-size: 52px;
+}
+.labelStyle {
   color: white;
   font-family: 'Wallpoet', cursive;
   font-size: 28px;
- }
- .labelStyle2{
-   float: left;
-   color: white;
-   font-family: 'Wallpoet', cursive;
-   font-size: 28px;
-  }
+}
+.labelStyle2 {
+  float: left;
+  color: white;
+  font-family: 'Wallpoet', cursive;
+  font-size: 28px;
+}
 .fieldStyle{
   font-size: 22px;
+  vertical-align: middle;
 }
 .droplist{
   width: 60%;

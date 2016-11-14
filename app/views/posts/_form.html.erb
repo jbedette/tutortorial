@@ -11,28 +11,23 @@
     </div>
   <% end %>
 
-  <span id="noticestyle">
-    <%= @ User.fname %> <%= @User.lname %>
-  </span>
+  <div class="align_job3">
+    <div class="field">
+      <%= f.label :title, "Title:", :class => "labelStyle" %>
+      <%= f.text_field :title, :class => "fieldStyle" %>
+    </div>
+    <div class="field">
+      <%= f.label :subject, "Subject:", :class => "labelStyle" %>
+      <%= f.text_field :subject, :class => "fieldStyle" %>
+    </div>
 
+    <div class="field">
+      <%= f.label :content, "Content:", :class => "labelStyle" %>
+      <%= f.text_area :content, :class => "fieldStyle" %>
+    </div>
 
-
-  <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </div>
-
-  <div class="field">
-    <%= f.label :subject %>
-    <%= f.text_field :subject %>
-  </div>
-
-  <div class="field">
-    <%= f.label :content %>
-    <%= f.text_area :content %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
+    <div class="actions">
+      <%= f.submit "Submit", :class => "buttonJobSave2" %>
+    </div>
   </div>
 <% end %>
